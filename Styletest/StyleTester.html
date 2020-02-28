@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Tester.css">
+    <title>HTML to test the various styles and SELECTOR concepts</title>
+</head>
+
+<h1>---------------------------------- HTML Summary ----------------------------------</h1>
+
+
+<blockquote class="classer" style="text-align: center;"><abbr>HTML</abbr> is expanded as <cite>Hyper Text Markup Language</cite>. It is a markup language that is used to structure <br> webpages. The look and feel of the web pages is defined by the <abbr>CSS</abbr> which is expanded as <cite>Cascading Style Sheets</cite></blockquote>
+
+<body>
+
+
+    <div class="menu">
+        <h1 class="menu"><img src="ic_account_balance_black_18dp.png" alt="" style="vertical-align: middle; padding: 5px;margin-left: 10em;"><a href="#c1">History</a></h1>
+        <h1 class="menu"><img src="ic_account_balance_wallet_black_24dp.png" alt="" style="vertical-align: middle; padding: 5px;"><a href="#c2" style="color: chartreuse;">General tags</a></h1>
+        <h1 class="menu"><img src="ic_3d_rotation_black_18dp.png" alt="" style="vertical-align: middle; padding: 5px;"><a href="#c3" style="color: chartreuse;">Content tags</a></h1>
+        <h1 class="menu"><img src="ic_accessibility_black_18dp.png" alt="" style="vertical-align: middle; padding: 5px;"><a href="#c4" style="color: chartreuse;">Semantec tags</a></h1>
+    </div>
+    <div class="menu1" style="height: 800px;width: 11%;float: left;background: green;margin-left: 0%;padding-left: 0%;z-index: 1;">
+        <ul style="padding-left: 5%;line-height: 244%;">
+            <li class="menu1 crazy" style="display:block;padding-left: -10%;text-align: left;">
+                <a>History
+                </a>
+                <button onclick="alertThat()">BUTTON</button>
+                <a href="#c1" style="color: chartreuse;">History
+                        <a style="color:rgb(226, 25, 125)">test1</a>
+                </a>
+                <a href="#c1" style="color: chartreuse;">History
+                            <a style="color:rgb(226, 25, 125)">test1</a>
+                </a>
+                <a href="#c1" style="color: chartreuse;">History
+                                <a style="color:rgb(226, 25, 125)">test1</a>
+                </a>
+                <a href="#c1" style="color: chartreuse;">History
+                                    <a style="color:rgb(226, 25, 125)">test1</a>
+                </a>
+                <a href="#c1" style="color: chartreuse;">History
+                                        <a style="color:rgb(226, 25, 125)">test1</a>
+                </a>
+                <a href="#c1" style="color: chartreuse;">History
+                                            <a style="color:rgb(226, 25, 125)">test1</a>
+                </a>
+            </li>
+            <li class="menu1" style="display:block">
+                <a href="#c2" style="color: chartreuse;">General tags</a>
+            </li>
+            <li class="menu1" style="display:block">
+                <a href="#c3" style="color: chartreuse;">Content tags</a>
+            </li>
+            <li class="menu1" style="display:block">
+                <a href="#c4" style="color: chartreuse;">Semantec tags</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p>This is prbably my first website where i have inculcated most of the things that i learnt about HTML and CSS. It took a lot of effort to do this considering that i have a full time job where i spend 9 to 10 hours everyday and i do a lot of work.
+            This is ongoing process where a lot of things need to be learnt. I will be learning html and CSS as thoroughly as possible and then prepare from the interview point of view as well. In addition to this i will be learning to BOOTSTRAP as well.
+            This is a time consuming process and i will have to build a lot of patience because it is very vast and there are so many things to remember. </p>
+        <p>Once HTML, CSS and BOOTSTRAP are completed thoroughly i will start with Angular JS, Node JS with express. </p>
+    </div>
+    <h2>Contents</h2>
+    <ol style="list-style-type: decimal;">
+        <li><a href="#c1">History</a></li>
+        <li><a href="#c2">General tags</a></li>
+        <li><a href="#c3">Content tags</a></li>
+        <li><a href="#c4">Semantec tags</a></li>
+    </ol>
+
+    <h3 id="c1" style="clear: both;margin-top: 2em;">History</h3>
+    <p style="margin: 20px;"><abbr>HTML</abbr> was developed as a universal markup language that can be used to display content(s) on websites. <br> Due to the widespread usage of the internet websites can be viewed across a wide array of electronic devices of various shapes
+        and sizes. <br> Hence <span style="font-weight: bolder;">there is a need for consistent display of webpages</span>, therefore the W3 organisation at <abbr>MIT</abbr> (which established various standards <br> across the World Wide Web) established
+        <abbr>HTML5</abbr> that is standardised and they have entirely eliminated the concept of versions for <abbr>HTML</abbr> to stremline with the development of the world wide web.</p>
+
+    <h3 id="c2">General Tags</h3>
+    <ul>
+        <dt>DOCTYPE tag</dt>
+        <dd>This tag is compulsary in an HTML file as it indicates the version of HTML document. Currently it indicates version 5.</dd>
+        <dt>HTML tag</dt>
+        <dd>It is essential as the entire content of the file should be enclosed within this tag.</dd>
+        <dt>head tag</dt>
+        <dd>This tag contains user defined information about the html document. This information is enclosed inside another tag called "title". <br> The page related style SELECTORS should also be defined here.</dd>
+        <dt>Body tag</dt>
+        <dd>As the name indicates this tag contains the body i.e. the main structural content of the file.</dd>
+    </ul>
+
+    <h3 id="c3">Content tags</h3>
+    <ul>
+        <dt>P tag</dt>
+        <dd>This tag contains the paragraph information of an html file.</dd>
+        <dt>Heading tag</dt>
+        <dd>All the headings related to a html file must be defined here, it has the following tag names h1,h2,h3,h4,h5 and h6 in the <br> decreasing order of size.</dd>
+        <dt>List tag</dt>
+        <dd>Lists are extremely useful in html as they are highly effective in indicating point-wise information.</dd>
+    </ul>
+
+    <h3 id="c4">Semantec tags</h3>
+    <ul>
+        <li>em - used to make characters
+            <a href="https://en.wikipedia.org/wiki/Italic_type" target="_blank">italic</a>
+        </li>
+        <li>code - used to indicate program <a href="https://en.wikipedia.org/wiki/Syntax_(programming_languages" target="_blank">syntaxes</a></li>
+        <li>abbr - indicates <a href="https://www.merriam-webster.com/dictionary/abbreviation" target="_blank">abbreviations</a></li>
+        <li>strong - used to <a href="https://lingojam.com/BoldTextGenerator" target="_blank">bold</a> the corresponding characters</li>
+    </ul>
+
+    <h3 id="c5">Other features of HTML</h3>
+    <div id="div1">
+
+        <div id="div2">
+
+            <p>Selectors</p>
+            <p>Style sheets</p>
+            <p>Pseudo class</p>
+            <p>Attribute selector</p>
+            <p>Selector specificity</p>
+            <p>Box model</p>
+        </div>
+    </div>
+
+    <div>
+
+
+        <img src="defaultmenu.jpg" usemap="#image-map" style="float: left;vertical-align: middle;">
+        <map name="image-map">
+            <area target="_blank" alt="Story of" title="Story of" href="https://www.indiatoday.in/news-analysis/story/behind-baghdadi-killing-story-of-donald-trump-s-obama-obsession-1613693-2019-10-29" coords="612,155,702,173" shape="rect">
+            <area target="_blank" alt="multiplayer game" title="multiplayer game" href="https://en.wikipedia.org/wiki/Multiplayer_video_game" coords="573,175,742,194" shape="rect">
+        </map>
+        <p style="position: absolute;left: 0;height: 10%;width: 10%;">This is Earth</p>
+        <p style="position: absolute;right: 58.5%;height: 10%;width: 10%;text-align: right;padding-top: 7px;">ALTERNATE</p>
+        <p style="vertical-align: middle;margin: 180px;">The image on the left is just an image of a videgame MENU, <br>we have used it to implement the concept of image mapping in HTML.</p>
+
+    </div>
+
+    <p style="clear: left;">
+        &nbsp;
+    </p>
+
+    <table cellpadding="5px">
+        <colgroup class="c1" span="2" style="width: 200px;"></colgroup>
+        <colgroup class="c2" span="2" style="width: 200px;">
+            <col span="1" style="height: 550%;">
+        </colgroup>
+        <colgroup class="c2" span="3" style="width: 200px;"></colgroup>
+        <colgroup class="c2" span="4" style="width: 400px;"></colgroup>
+        <caption style="padding-bottom: 10px;">Tabular representation of a few TAGS</caption>
+        <tr>
+            <th>TAG name</th>
+            <th>Description</th>
+            <th>Important attribute(s)</th>
+            <th>Closing tag</th>
+        </tr>
+        <tr>
+            <td>&excl;doctype</td>
+            <td>Tells the browser the html version of the current document</td>
+            <td>html keyword</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>html</td>
+            <td>Tells the browser that the current document is an html file</td>
+            <td>html itself</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>Contains non-displayable information and page level styles</td>
+            <td>title</td>
+            <td>compulsary</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="text-align: center;">Sub-tag - head</td>
+            <th>title</th>
+            <th>style</th>
+            <th>link</th>
+        </tr>
+        <tr>
+            <td>Non-dsiaplayable, provides information about the page</td>
+            <td>Used to apply CSS to page wide</td>
+            <td>Contains reference to an external style sheet</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">Not necessary</td>
+            <td>Compulsary if a style sheet is used</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" style="text-align: center;">Anchor tag</td>
+            <td>href</td>
+            <td>target</td>
+        </tr>
+        <tr>
+            <td>Hyperlink reference</td>
+            <td>defines how the a link opens</td>
+        </tr>
+    </table>
+
+    <p>&nbsp</p>
+
+    <hr style="font-weight: bolder;">
+
+    <p>&nbsp;</p>
+
+    <div class="divpos" id="pos">
+
+        <p style="border: 10px solid red;width: 60%;text-align: center;position:relative;left:9.5%;"><em>O</em>ne</p>
+        <p style="border: 10px solid yellow;position: relative;top: 65px;width: 30%;left: 2%;"><em>T</em>wo</p>
+        <p style="border: 10px solid orange;position: relative;top:-80px;left: 35%;width: 40%;"><em>T</em>hree</p>
+        <p style="border: 10px solid orange;position: relative;top:-30px;left: 35%;width: 40%;"><em>F</em>our</p>
+    </div>
+
+    <div>
+        <p style="border: 10px solid red;background-color: cadetblue;">Inner paragrpah</p>
+        <p style="border: 10px solid red;background-color: cadetblue;width: 80%;position: relative;z-index: 2;">Middle paragrpah</p>
+        <p style="border: 10px solid red;background-color: rgb(44, 212, 156);width: 60%;position: relative;left:20%;top: -40px;z-index: 1;">Outer paragraph</p>
+    </div>
+
+    <!-- <section>
+        <h3>Coding project info</h3>
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/oC483DTjRXU?start=3" frameborder="3" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section> -->
+    <!-- <h3>Video format test using video tag</h3>
+
+        <video src="C:\Users\SamU\Downloads\Parasite.2019.KOREAN.WEBRip.x264-ION10\parasite.mp4" controls width="360" height="215">
+            <source src="" type="">
+        </video>
+
+        <h3>video format test using object tag</h3>
+        <object data="C:\Users\SamU\Downloads\Parasite.2019.KOREAN.WEBRip.x264-ION10\parasite.mp4" type="video/mp4" width="360" height="215"></object>
+
+        <h3>adding pdf file using object</h3>
+        <object data="C:\Users\SamU\Downloads\5007989_RL.pdf" type="application/pdf" width="460" height="460"></object>
+
+        <h3>Audio format test using audio tag</h3>
+        <audio src="C:\Users\SamU\Music\Views.mp3" controls loop autoplay>
+            <source src="C:\Users\SamU\Music\Views.mp3" type="audio/mpeg"> 
+        </audio> -->
+
+
+
+    <footer>
+        <address style="padding-top: 60px;line-height: 0.5px;">
+        Samanth Annaiah <br>
+        &copy; copyright 2019
+        <a href="https://en.wikipedia.org/wiki/Copyright#Rights_granted" target="_blank"><img src="ic_assignment_ind_black_18dp.png" alt="shape of a head against a file" style="vertical-align: middle;padding: 5px;"></a>
+        </address>
+    </footer>
+
+    <script src="domTest.js">
+    </script>
+
+</body>
+
+</html>

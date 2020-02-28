@@ -1,0 +1,50 @@
+.s1 {
+    grid-area: s1;
+}
+
+.s2 {
+    grid-area: menu;
+}
+
+.s3 {
+    grid-area: main;
+}
+
+.s4 {
+    grid-area: right;
+}
+
+.s5 {
+    grid-area: footer;
+}
+
+.s6 {
+    grid-area: foot;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 's1 s1 s1 s1 s1 s1' 'menu main main main right right' 'menu footer footer footer footer footer' 'foot foot foot foot foot foot';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.success {
+    color: pink;
+}
+
+.fail {
+    color: red;
+}
+
+body>div {
+    background-color: yellow;
+}

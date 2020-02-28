@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Rebooter</title>
+
+    <!-- bootstrap ans css style sheet linking-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="reboot_sheet.css" rel="stylesheet">
+
+    <!-- javascript for bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- media query script check -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<html>
+<section class="main_menu">
+    <ul class="main_menu">
+        <li><a href="#vhead">Vehicle</a></li>
+        <li><a href="#getquote">Quotation</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Contract</a></li>
+        <li><a href="#">Invoicing</a></li>
+        <div class="ddown">
+            <li><a href="https://messages.google.com/web/authentication" target="_blank" onclick="ddownClick()">Upload</a></li>
+            <section class="ddown-c">
+                <article>
+                    <a href="">Word</a>
+                </article>
+                <article>
+                    <a href="">Excel</a>
+                </article>
+                <article>
+                    <a href="">Notepad</a>
+                </article>
+                <article>
+                    <a href="">Image</a>
+                </article>
+            </section>
+        </div>
+
+
+    </ul>
+</section>
+
+<div class="vehicle">
+    <section class="vehicle">
+
+        <h1>Vehicle Details</h1>
+        <article class="vehicle_info" id="vhead">
+            <div class="vehicle_h5">
+                <h5>External Features</h5>
+            </div>
+            <div class="factor">
+                <p>internal color</p>
+                <p>External color</p>
+                <p>Maximum weight</p>
+                <p>Wheels size</p>
+                <p>Doors</p>
+                <p>Tyre size</p>
+                <p>Body type</p>
+                <p>Bumper</p>
+            </div>
+        </article>
+        <article class="vehicle_info">
+            <div class="vehicle_h5">
+                <h5>Internal Features</h5>
+            </div>
+            <div class="factor">
+                <p>Engine size</p>
+                <p>Transmission</p>
+                <p>Clutch</p>
+                <p>Dashboard</p>
+                <p>Ignition</p>
+                <p>seat cover</p>
+            </div>
+        </article>
+        <article class="vehicle_info">
+            <div class="vehicle_h5">
+                <h5>Lease features</h5>
+            </div>
+            <div class="factor">
+                <p>Residual value</p>
+                <p>Maintenance cost</p>
+                <p>Miantenance cost2</p>
+                <p>List price</p>
+                <p>Discount</p>
+                <p>Fuel deposit</p>
+                <p>Motorbezogene tax</p>
+                <p>Depreciation</p>
+                <p>KM cost</p>
+            </div>
+        </article>
+        <article class="vehicle_info">
+            <div class="vehicle_h5">
+                <h5>Cars and Vans</h5>
+            </div>
+            <div class="factor">
+                <p>Vehicle Type</p>
+                <p>Tax slab</p>
+                <p>Dimensions</p>
+                <p>Capacity</p>
+                <p>Fuel efficiency</p>
+                <p>Geound clearance</p>
+            </div>
+        </article>
+    </section>
+</div>
+
+<div class="quote">
+    <section class="quote">
+        <h1>QUOTATION</h1>
+    </section>
+</div>
+<div class="container">
+    <fieldset>
+        <legend>Quotation submission</legend>
+        <hr>
+        <div class="row">
+            <div class="col-7">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="getquote">Enter quotation number</label>
+                        <input id="getquote" class="form-control w-50 p-3 text-dark font-weight-bold" type="number" name=" " onclick="getq()" placeholder="numbers">
+                        <label for="getcus">Enter customer number</label>
+                        <input id="getcus" class="form-control w-50 p-3 text-dark font-weight-bold" type="number" name=" " onclick="getc()" placeholder="optional">
+                        <label for="getveh">Enter vehicle</label>
+                        <input id="getveh" class="form-control w-50 p-3 text-dark font-weight-bold" type="text" name=" " onclick="getv()" placeholder="make/model">
+                        <button type="button" class="btn btn-primary mt-4" onclick="submit1()">GetQuote</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5 quote_notif">
+                <div class="card status  bg-secondary">
+                    <div class="card-body">
+                        <h5 class="card-title quote_notif_r1" text-></h5>
+                        <img class="w-50 quote_notif_img" src="warning.png" alt="" vertical-align="middle">
+                        <p class="card-text quote_notif_r2 font-weight-bold"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+<div id="main" class="container-fluid">
+    <section>
+        <h1>DELIVERY</h1>
+    </section>
+    <div id="deliv_stat">
+        <section class="s1 vehicle_h5">
+            <h5>Supplier</h5>
+        </section>
+        <section class="s2 vehicle_h5">
+            <h5>Plate</h5>
+        </section>
+        <section class="s3 vehicle_h5">
+            <h5>Order</h5>
+        </section>
+        <div class="s1_detail">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="getsup">Supplier number</label>
+                    <input id="getsup" class="form-control w-50 p-3 text-dark font-weight-bold" type="number" onclick="delcheck(this.id)" onmouseover="hover(this.id)" placeholder="nums">
+                    <label for="getsupAct">Supplier Active &quest;</label>
+                    <input id="getsupAct" class="form-control w-50 p-3 text-dark font-weight-bold" type="checkbox" onclick="delcheck(this.id)" onmouseover="hover(this.id)" placeholder="option">
+                    <button type="button" id="b1" class="btn btn-primary mt-4" onclick="delcheck(this.id)">DONE</button>
+                </div>
+            </form>
+        </div>
+        <div class="s2_detail">
+            <div class="s2_detail_1">
+                <form action="" method="POST">
+                    <div class="form-group d-block">
+                        <label for=" ">Plate number</label>
+                        <input id="getpnum" class="form-control w-50 p-3 text-dark font-weight-bold" type="number" placeholder="nums" onclick="delcheck(this.id)" onmouseover="hover(this.id)" onmouseleave="mleave(this.id)">
+                        <label for=" ">Delivery date</label>
+                        <input id="getddate" class="form-control w-50 p-3 text-dark font-weight-bold" type="number" placeholder="option" onclick="delcheck(this.id)" onmouseover="hover(this.id)">
+                        <label for=" ">Expiry date</label>
+                        <input id="edate" class="form-control w-50 p-3 text-dark font-weight-bold" type="number" placeholder="option" onclick="delcheck(this.id)" onmouseover="hover(this.id)">
+                    </div>
+                </form>
+
+            </div>
+            <div class="s2_detail_2">
+                <form action=" " method="POST">
+                    <div class="form-group d-block">
+                        <label for=" ">Chassis number</label>
+                        <input id="chnum" class="form-control w-50 p-3 text-dark font-weight-bold " type="number" placeholder="nums" onclick="delcheck(this.id)" onmouseover="hover(this.id)">
+                        <label for=" ">Engine number</label>
+                        <input id="engnum" class="form-control w-50 p-3 text-dark font-weight-bold " type="number" placeholder="option" onclick="delcheck(this.id)" onmouseover="hover(this.id)">
+                        <label for=" ">Delivered to</label>
+                        <input id="dto" class="form-control w-50 p-3 text-dark font-weight-bold " type="number" placeholder="option" onclick="delcheck(this.id)" onmouseover="hover(this.id)">
+                    </div>
+                </form>
+            </div>
+            <div class="s2_detail_3">
+                <button type="button" id="b2" class="btn btn-primary mt-4" onclick="delcheck(this.id)">DONE</button>
+                <button type="button" id="b22" class="btn btn-warning mt-4" onmouseout="mkleave(this.event)">BuTTon</button>
+            </div>
+        </div>
+
+        <div class="s3_detail ">
+            <form action=" " method="POST ">
+                <div class="form-group">
+                    <label for="getord">Order number</label>
+                    <input id="getord" class="form-control w-50 p-3 text-dark font-weight-bold" type="number" name=" " onclick="delcheck(this.id)" placeholder="numbers" onmouseover="hover(this.id)">
+                    <label for="getodate ">Order date</label>
+                    <input id="getodate" class="form-control w-50 p-3 text-dark font-weight-bold " type="number" name=" " onclick="delcheck(this.id)" placeholder="optional" onmouseover="hover(this.id)">
+                    <button type="button" id="b3" class="btn btn-primary mt-4 " onclick="delcheck(this.id)">DONE</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <div class="container mt-5" id="res1">
+        <div id="res" class="alert alert-warning text-center text-dark font-weight-bold">
+            <h2>RESULT</h2>
+        </div>
+    </div>
+
+</div>
+
+<div class="conver h3" onmouseover="hun()" onmouseleave="hub()">
+    <section>
+        .....Contract type decides the VAT.....
+    </section>
+</div>
+
+&nbsp;
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">MLA</h5>
+                    <p class="card-text">Membership Lease Agreement</p>
+                </div>
+                <img id="img1" class="card-img-bottom" src="mla.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Calc Sheet</h5>
+                    <p class="card-text">Quotation calculation sheet</p>
+                </div>
+                <img id="img2" class="card-img-bottom" src="qsheet.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="scr" src="calcnn.js"></script>
+
+</html>

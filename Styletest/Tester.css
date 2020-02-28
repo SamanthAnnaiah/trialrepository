@@ -1,0 +1,294 @@
+     h1 {
+         color: purple;
+         background-color: papayawhip;
+         font-weight: 700;
+         font-size: 200%;
+         text-align: center;
+         text-shadow: purple;
+         text-indent: 3rem;
+         letter-spacing: 2px;
+         border-bottom: 5px solid crimson;
+         border-width: 1px 5px 1px 1px;
+     }
+     
+     h2 {
+         font-family: Haettenschweiler;
+         font-weight: bolder;
+         font-size: 25px;
+         color: brown;
+         text-decoration: none;
+         text-shadow: 2px 2px rgb(225, 238, 245);
+         margin-left: 5px;
+     }
+     
+     h3 {
+         font-family: Haettenschweiler;
+         font-weight: bolder;
+         font-size: 19px;
+         color: darkgoldenrod;
+         border: 1px ridge rgb(83, 80, 59);
+         padding: 5px;
+         padding-left: 4px;
+         margin: 4px;
+         margin-left: 5px;
+     }
+     
+     .classer {
+         color: darkblue;
+     }
+     
+     blockquote abbr {
+         color: rgb(12, 187, 64);
+         font-weight: bolder;
+     }
+     
+     ol,
+     ul {
+         font-style: normal;
+         font-family: 'Franklin Gothic Medium';
+         color: darkviolet;
+         list-style-image: url("icons8-sagittarius-20.png");
+         border-bottom: 0px solid black;
+     }
+     
+     li,
+     dd {
+         font-family: 'Times New Roman', Times;
+         color: rgb(29, 43, 43);
+         font-weight: 450;
+     }
+     
+     p abbr {
+         font-weight: 300;
+         text-decoration: solid;
+         color: midnightblue;
+     }
+     
+     li a {
+         color: deeppink;
+         font-size: 20px;
+     }
+     
+     body {
+         border: 1px grey;
+         background-color: none;
+         background-image: url("atmosphere-background-bright-clouds-19670.jpg");
+         background-repeat: no-repeat;
+         opacity: 0.9;
+     }
+     
+     #div2 {
+         overflow: scroll;
+         border: 2px solid grey;
+         max-height: 200px;
+         margin: 27px 27px 27px 27px;
+         background-color: ivory;
+     }
+     
+     #div2:hover {
+         background: rgb(186, 217, 238);
+     }
+     
+     #div1 {
+         border: 2px solid grey;
+         margin: 27px 27px 27px 27px;
+         background-color: indianred;
+         padding: 3px;
+     }
+     
+     div.first input:focus {
+         outline: none;
+         border: 4px dotted red;
+     }
+     
+     input[type="email"]:valid {
+         background-color: green;
+     }
+     
+     tr:first-child {
+         color: red;
+     }
+     
+     div p {
+         display: block;
+         text-align: center;
+         color: rgb(68, 22, 153);
+         font-size: large;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         font-weight: bolder;
+         ;
+     }
+     
+     div p:first-letter {
+         color: red;
+         font-size: 200%;
+     }
+     
+     p[class] {
+         color: lightblue;
+     }
+     
+     p[class~="classer"] {
+         color: rgb(102, 168, 190);
+     }
+     
+     p[class="classer"] {
+         color: rgb(39, 161, 202);
+     }
+     
+     a:link {
+         color: blue;
+     }
+     
+     a:visited {
+         color: brown;
+     }
+     
+     a:hover {
+         color: orangered;
+     }
+     
+     h3:hover {
+         color: rgb(27, 2, 16);
+     }
+     
+     h1[class="menu"] {
+         display: inline;
+         border: 2px none green;
+         box-shadow: 1px 4px green;
+         margin: 4px;
+         padding: 7px;
+         font-size: 20px;
+         text-shadow: 1px 1px rgb(238, 250, 250);
+         background-color: green;
+         letter-spacing: 2px;
+         font-family: monospace;
+         font-size: 200%;
+     }
+     
+     h1 a {
+         letter-spacing: 2px;
+         font-family: monospace;
+         font-size: 24px;
+         text-decoration: none;
+         font-weight: bolder;
+         text-shadow: 1px 1px rgb(238, 250, 250);
+         color: rgb(172, 245, 56);
+     }
+     
+     div[class="menu"] {
+         border: 2px solid rgb(7, 170, 7);
+         background-color: green;
+     }
+     
+     tr {
+         font-family: 'Franklin Gothic Medium';
+         font-size: 130%;
+         overflow: scroll;
+     }
+     
+     td {
+         border: 3px solid black;
+         border-spacing: 60px;
+         border-collapse: separate;
+         background-color: burlywood;
+         text-align: left;
+     }
+     
+     th {
+         border: 3.8px solid rgb(196, 10, 10);
+         font-weight: bolder;
+         background-color: darkcyan;
+     }
+     
+     caption {
+         font-weight: bolder;
+         font-size: 130%;
+         text-decoration: underline;
+     }
+     
+     table {
+         border: 4px solid;
+         border-collapse: collapse;
+     }
+     
+     .c2 {
+         color: darkcyan;
+         font-family: cursive;
+     }
+     
+     input,
+     label {
+         margin: 10px;
+     }
+     
+     form {
+         position: relative;
+         top: 20px;
+         bottom: 40PX;
+         border: 9px solid orange;
+         padding: 10px;
+         padding-bottom: .5px;
+     }
+     
+     label {
+         font-weight: bolder;
+         font-size: 140%;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         letter-spacing: 0px;
+         text-shadow: .5px 3px orange;
+     }
+     
+     input {
+         background-color: rgb(231, 228, 178);
+         font-size: 150%;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         letter-spacing: 1px;
+     }
+     
+     #sub1 {
+         position: absolute;
+         left: 450px;
+         top: 28%;
+     }
+     
+     .sub2 {
+         background-color: brown;
+         color: rgb(245, 201, 8);
+         padding: 10px;
+     }
+     
+     .l1 {
+         font-weight: bolder;
+         font-size: 140%;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         letter-spacing: 0px;
+         text-shadow: .5px 3px orange;
+         padding-top: 10px;
+         padding-bottom: 05px;
+         display: block;
+     }
+     
+     select {
+         width: 9%;
+         border: 25% solid black;
+     }
+     
+     legend {
+         font-weight: bolder;
+         font-size: 200%;
+         color: chocolate;
+     }
+     
+     fieldset {
+         background-color: cyan;
+         box-shadow: 0 3px 6px orange inset;
+     }
+     
+     h1>a {
+         color: black!important;
+     }
+     
+     li[class~="crazy"]>a:nth-child(7) {
+         color: rgb(8, 8, 6)!important;
+     }

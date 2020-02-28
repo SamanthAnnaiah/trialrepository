@@ -1,0 +1,33 @@
+p.lead {
+    font-weight: bolder;
+}
+
+p.t1 {
+    color: rgb(47, 207, 25);
+}
+
+#m1:hover {
+    cursor: help;
+}
+
+#ig1 {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+}
+
+div[class*="main"] {
+    margin-left: 2rem !important;
+}
+
+@media screen and (max-width: 800px) {
+    #fg1 {
+        left: 60%!important;
+        top: 30%!important;
+    }
+    #ig1 {
+        width: 150px!important;
+        height: 150px!important;
+        top: 20%;
+    }
+}

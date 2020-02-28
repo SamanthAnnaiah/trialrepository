@@ -1,0 +1,229 @@
+section.main_menu ul {
+    list-style-type: none;
+    width: 100%;
+    background-color: rgb(235, 228, 228);
+}
+
+section.main_menu ul li,
+section.main_menu ul div {
+    display: inline-block;
+    margin: 10px 50px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding: 0;
+    border: 0;
+}
+
+section.ddown-c {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding-left: 0;
+    margin-left: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+div.ddown:hover section.ddown-c {
+    display: block;
+}
+
+section.ddown-c article {
+    padding: 14px;
+    background-color: rgb(190, 186, 184);
+}
+
+section.main_menu section.ddown-c a:hover {
+    color: darkgoldenrod;
+}
+
+section.main_menu a:hover {
+    text-decoration: none;
+    color: rgb(148, 61, 219);
+}
+
+section.vehicle_h5,
+div.vehicle_h5 {
+    background-color: hotpink;
+    padding: 5px;
+}
+
+section.vehicle_h5,
+div.vehicle_h5 h5 {
+    margin-top: 8px;
+}
+
+article.vehicle_info div.factor {
+    height: 80%;
+    overflow-y: scroll;
+}
+
+div.factor p:nth-child(odd) {
+    color: rgb(42, 110, 165);
+}
+
+div.factor p:nth-child(1) {
+    margin-top: 15px;
+}
+
+article.vehicle_info {
+    display: inline-block;
+    width: 20%;
+    margin: 30px;
+    height: 300px;
+    border: none;
+    text-align: center;
+    background: rgb(190, 210, 209);
+    background: radial-gradient(circle, rgba(190, 210, 209, 1) 59%, rgba(135, 237, 212, 1) 98%, rgba(0, 255, 179, 1) 100%);
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(211, 192, 168);
+    margin: 30px 40px;
+    letter-spacing: 1px;
+}
+
+section.quote {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+div.quote {
+    background-color: rgb(211, 192, 168);
+}
+
+fieldset {
+    border: .9px solid rgb(12, 11, 11);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+legend {
+    margin-bottom: 0px;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+fieldset hr {
+    margin-top: 0;
+    border: 0.7px solid black;
+    box-shadow: 1px 1px 5px rgba(114, 23, 23, 0.5);
+}
+
+div.card.status img {
+    float: right;
+    margin-top: 35%;
+    margin-right: -10%;
+}
+
+
+/* grid layout section and area */
+
+#deliv_stat {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(20px, auto);
+    text-align: center!important;
+}
+
+section.s1 {
+    grid-column: 1/5;
+    grid-row: 1/3;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+section.s2 {
+    grid-column: 5/9;
+    grid-row: 1/3;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+section.s3 {
+    grid-column: 9/13;
+    grid-row: 1/3;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+div.s1_detail {
+    grid-column: 1/5;
+    grid-row: 3/7;
+    background-color: rgb(245, 227, 214);
+    margin: 15px;
+    margin-top: 0;
+}
+
+div.s2_detail {
+    grid-column: 5/9;
+    grid-row: 3/7;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: minmax(20px, auto);
+    background-color: rgb(245, 227, 214);
+    margin: 15px;
+    margin-top: 0;
+}
+
+div.s2_detail_1 {
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+div.s2_detail_2 {
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+div.s2_detail_3 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin-bottom: 15px;
+}
+
+div.s3_detail {
+    grid-column: 9/13;
+    grid-row: 3/7;
+    background-color: rgb(245, 227, 214);
+    margin: 15px;
+    margin-top: 0;
+}
+
+#deliv_stat input {
+    width: 100%;
+    margin: 2px 109px;
+}
+
+#deliv_stat div.s2_detail input {
+    width: 100%;
+    margin: 2px 55px;
+}
+
+
+/* grid layout section and area */
+
+div.conver {
+    opacity: 1;
+    width: 100%;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+    transition-timing-function: ease-out;
+}
+
+div.conver:hover {
+    width: 500px;
+}
+
+div.conver section {
+    text-align: center;
+    opacity: 0;
+}

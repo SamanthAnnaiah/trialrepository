@@ -1,0 +1,94 @@
+p.lead {
+    font-weight: bold;
+}
+
+p.sse {
+    margin-left: 5rem!important;
+    width: 22rem;
+}
+
+#ig1 {
+    position: absolute!important;
+    top: 15%!important;
+    left: 70%!important;
+}
+
+article.headpara {
+    width: 55rem;
+    margin-bottom: -3rem;
+    font-weight: 600;
+}
+
+section.pinfo div.card {
+    height: 30rem;
+}
+
+section.pinfo a {
+    font-weight: 500;
+    color: rgb(65, 122, 228);
+    display: inline-block;
+    margin: 0px 2px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(90, 80, 80, 0.5);
+}
+
+div[class*="main"] {
+    margin-left: 2rem !important;
+    padding: 0!important;
+    margin-bottom: -2rem!important;
+}
+
+section.pinfo hr {
+    border: 3px solid!important;
+}
+
+.s1 {
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 0px black;
+}
+
+@media screen and (max-width: 800px) {
+    #fg1 {
+        left: 60%!important;
+        top: 30%!important;
+    }
+    #ig1 {
+        width: 150px!important;
+        height: 150px!important;
+        top: 20%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    div img {
+        width: 80px!important;
+        height: 80px!important;
+    }
+    article.card-footer {
+        font-size: small!important;
+    }
+    section.mainhead p {
+        font-size: 0.7rem!important;
+        width: 20rem!important;
+        font-weight: bold!important;
+    }
+}
+
+@media screen and (max-width:1125px) {
+    section.mainhead h1 {
+        font-size: 2.5rem!important;
+        font-weight: bolder;
+    }
+    section.mainhead p {
+        font-size: 0.7rem!important;
+        width: 32rem;
+        font-weight: 500!important;
+    }
+    p.sse {
+        margin-left: 1rem!important;
+        width: 18rem!important;
+    }
+    div img {
+        width: 180px!important;
+        height: 180px!important;
+    }
+}
